@@ -104,24 +104,23 @@ def jalan(z):
         sys.stdout.write(e)
         sys.stdout.flush()
         time.sleep(0.01)
-
+       
 logo ="""\033[1;97m
-'\33[1;34m########    ###    ########     ###    ######## 
-'\33[1;91m##         ## ##   ##     ##   ## ##        ##  
-'\33[1;35m##        ##   ##  ##     ##  ##   ##      ##   
-'\33[1;34m######   ##     ## ########  ##     ##    ##    
-'\33[1;33m##       ######### ##   ##   #########   ##     
-'\33[1;91m##       ##     ## ##    ##  ##     ##  ##      
-'\33[1;97m##       ##     ## ##     ## ##     ## ########  
-         
-'\33[1;97m[*] Creater  : Faraz Ali
-'\33[1;33m[*] Version  : 1.0.0
-'\33[1;35m[*] GitHub   : https://github.com/KINGFATH3R
-'\33[1;91m[*] TEAM     : FBR
-
+d88888b  .d8b.  d8888b.  .d8b.  d88888D 
+88'     d8' `8b 88  `8D d8' `8b YP  d8' 
+88ooo   88ooo88 88oobY' 88ooo88    d8'  
+88~~~   88~~~88 88`8b   88~~~88   d8'   
+88      88   88 88 `88. 88   88  d8' db 
+YP      YP   YP 88   YD YP   YP d88888P 
+                                                                                      
+--------------------------------------------------                              
+'\033[1;97m[*] Creater  : Faraz Ali
+'\033[1;33m[*] Version  : 1.1.0
+'\033[1;35m[*] GitHub   : https://github.com/FARAZ-ID
+'\033[1;91m[*] FRIEND   : TANISHA
+--------------------------------------------------
 '\33[1;97mTurn on & off flight (airplane) mode before use   
 --------------------------------------------------"""
-
 def cek_apk(coki):
     session = requests.Session();w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
     sop = BeautifulSoup(w,"html.parser")
